@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.duanlian.fragmenthideandshowdemo.fragment.WangFragment">
+
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context="com.example.asus.phonecall.MainActivity">
+
+		<!--<TextView
+			android:id="@+id/hello"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:text="fregment_wang"
+			android:visibility="visible" />
+
+		<Button
+			android:id="@+id/viewAuthority"
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentStart="true"
+			android:layout_below="@+id/hello"
+			android:layout_centerHorizontal="true"
+			android:text="viewAuthority"
+			android:textSize="12sp" />
+
+		<Button
+			android:id="@+id/openService"
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:layout_below="@+id/viewAuthority"
+			android:text="openService"
+			android:textSize="12sp" />
+
+		<Button
+			android:id="@+id/closeService"
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:layout_below="@+id/openService"
+			android:text="closeService"
+			android:textSize="12sp" />-->
+
+		<Button
+			android:id="@+id/getroot"
+			android:layout_width="100dp"
+			android:layout_height="50dp"
+			android:text="getroot"
+			android:textSize="12sp" />
+	</RelativeLayout>
+</RelativeLayout>

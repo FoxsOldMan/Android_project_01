@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><!--Used for zhaohu fragment.-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@android:color/white">
+
+	<RelativeLayout
+		android:id="@+id/sec0"
+		android:layout_width="75dp"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:background="@android:color/white"
+		android:minHeight="50dp" >
+
+		<ImageView
+			android:id="@+id/app_image"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:layout_centerHorizontal="true"
+			android:src="@mipmap/ic_launcher" />
+
+		<TextView
+			android:id="@+id/app_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@+id/app_image"
+			android:singleLine="false"
+			android:text="app_name" />
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/sec1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_toEndOf="@+id/sec0"
+		android:layout_toRightOf="@+id/sec0"
+		android:background="@android:color/white"
+		android:minHeight="50dp" >
+
+		<TextView
+			android:id="@+id/text_SEND_SMS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+			android:text="读取短信"/>
+
+		<TextView
+			android:id="@+id/SEND_SMS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_SEND_SMS"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="SEND_SMS" />
+
+		<TextView
+			android:id="@+id/text_READ_CONTACTS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_SEND_SMS"
+			android:layout_toRightOf="@+id/text_SEND_SMS"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="读取联系人"/>
+
+		<TextView
+			android:id="@+id/READ_CONTACTS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_READ_CONTACTS"
+			android:layout_alignStart="@+id/text_READ_CONTACTS"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="READ_CONTACTS" />
+
+		<TextView
+			android:id="@+id/text_READ_CALL_LOG"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_READ_CONTACTS"
+			android:layout_toRightOf="@+id/text_READ_CONTACTS"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="读取通话记录"/>
+
+		<TextView
+			android:id="@+id/READ_CALL_LOG"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginTop="25dp"
+			android:layout_alignLeft="@+id/text_READ_CALL_LOG"
+			android:layout_alignStart="@+id/text_READ_CALL_LOG"
+			android:singleLine="true"
+			android:text="READ_CALL_LOG" />
+
+
+		<TextView
+			android:id="@+id/text_ACCESS_FINE_LOCATION"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_READ_CALL_LOG"
+			android:layout_toRightOf="@+id/text_READ_CALL_LOG"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="获取位置"/>
+
+		<TextView
+			android:id="@+id/ACCESS_FINE_LOCATION"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:layout_alignLeft="@+id/text_ACCESS_FINE_LOCATION"
+			android:layout_alignStart="@+id/text_ACCESS_FINE_LOCATION"
+			android:singleLine="true"
+			android:text="ACCESS_FINE_LOCATION" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+		android:id="@+id/sec2"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/sec1"
+		android:layout_toEndOf="@+id/sec0"
+		android:layout_toRightOf="@+id/sec0"
+		android:background="@android:color/white"
+		android:minHeight="50dp">
+
+		<TextView
+			android:id="@+id/text_READ_PHONE_STATE"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="获取IMEI"/>
+
+		<TextView
+			android:id="@+id/READ_PHONE_STATE"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_READ_PHONE_STATE"
+			android:layout_alignStart="@+id/text_READ_PHONE_STATE"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="READ_PHONE_STATE" />
+		<!--android:layout_toRightOf="@+id/ACCESS_FINE_LOCATION"-->
+		<!--android:layout_toEndOf="@+id/ACCESS_FINE_LOCATION"-->
+
+		<TextView
+			android:id="@+id/text_ROOT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_READ_PHONE_STATE"
+			android:layout_toRightOf="@+id/text_READ_PHONE_STATE"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="ROOT"/>
+
+		<TextView
+			android:id="@+id/ROOT"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_ROOT"
+			android:layout_alignStart="@+id/text_ROOT"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="ROOT" />
+
+		<TextView
+			android:id="@+id/text_READ_PRECISE_PHONE_STATE"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_ROOT"
+			android:layout_toRightOf="@+id/text_ROOT"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="获取来电状态"/>
+
+		<TextView
+			android:id="@+id/READ_PRECISE_PHONE_STATE"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_READ_PRECISE_PHONE_STATE"
+			android:layout_alignStart="@+id/text_READ_PRECISE_PHONE_STATE"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="READ_PRECISE_PHONE_STATE" />
+
+		<TextView
+			android:id="@+id/text_READ_SMS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toEndOf="@+id/text_READ_PRECISE_PHONE_STATE"
+			android:layout_toRightOf="@+id/text_READ_PRECISE_PHONE_STATE"
+			android:layout_marginLeft="4dp"
+			android:layout_marginStart="4dp"
+
+			android:text="读取短信内容"/>
+
+		<TextView
+			android:id="@+id/READ_SMS"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/text_READ_SMS"
+			android:layout_alignStart="@+id/text_READ_SMS"
+			android:layout_marginTop="25dp"
+			android:singleLine="true"
+			android:text="READ_SMS" />
+	</RelativeLayout>
+
+</RelativeLayout>
